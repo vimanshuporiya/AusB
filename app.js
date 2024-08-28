@@ -12,7 +12,7 @@ import messageRoute from "./routes/message.route.js";
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Your client-side origin
+  origin: 'https://stalwart-sunburst-a60797.netlify.app', // Your client-side origin
   credentials: true // Allow credentials
 }));
 app.use(express.json());
