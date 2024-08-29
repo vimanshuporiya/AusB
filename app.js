@@ -8,11 +8,11 @@ import userRoute from "./routes/user.route.js";
 import chatRoute from "./routes/chat.route.js";
 import messageRoute from "./routes/message.route.js";
 
- const PORT = process.env.PORT
+ const PORT = process.env.PORT || 8800
 const app = express();
 
 app.use(cors({
-  origin: 'https://stalwart-sunburst-a60797.netlify.app', // Your client-side origin
+  // origin: 'process.env.', // Your client-side origin
   credentials: true // Allow credentials
 }));
 app.use(express.json());
