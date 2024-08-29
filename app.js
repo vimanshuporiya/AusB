@@ -12,7 +12,7 @@ import messageRoute from "./routes/message.route.js";
 const app = express();
 
 app.use(cors({
-  // origin: 'process.env.', // Your client-side origin
+  origin: 'process.env.CLIENT_URL', // Your client-side origin
   credentials: true // Allow credentials
 }));
 app.use(express.json());
